@@ -13,7 +13,7 @@ body {
   padding: 40px;
 }
 
-/* === Layout === */
+/* === Main === */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -107,6 +107,12 @@ section h2 {
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(255, 69, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(255, 69, 0, 0.6);
 }
 
 .project h3 {
@@ -121,6 +127,39 @@ section h2 {
 }
 
 .project a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+/* === Certificate Section === */
+.certificate {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-left: 4px solid #dc143c;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(220, 20, 60, 0.6);
+}
+
+.certificate h3 {
+  color: #dc143c;
+  margin-bottom: 10px;
+}
+
+.certificate a {
+  color: #ff4b4b;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.certificate a:hover {
   text-decoration: underline;
   color: orange;
 }
